@@ -1,0 +1,38 @@
+{
+  "pluginAlias": "RFConverterPlatform",
+  "pluginType": "platform",
+  "headerDisplay": "Manage your Safemate / YET6956 RF Converters. This plugin will automatically discover your remotes and keys.",
+  "schema": {
+    "type": "object",
+    "properties": {
+      "name": {
+        "title": "Platform Name",
+        "type": "string",
+        "default": "RF Converter",
+        "required": true
+      },
+      "discoveryTimeout": {
+        "title": "Discovery Timeout (seconds)",
+        "type": "integer",
+        "default": 10,
+        "description": "How long to look for devices on the network at startup."
+      },
+      "devices": {
+        "title": "Manual Device Configuration (Optional)",
+        "type": "array",
+        "items": {
+          "title": "Device",
+          "type": "object",
+          "properties": {
+            "ip": {
+              "title": "IP Address",
+              "type": "string",
+              "format": "ipv4",
+              "description": "Specify an IP if auto-discovery is blocked by your network."
+            }
+          }
+        }
+      }
+    }
+  }
+}

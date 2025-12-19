@@ -1,0 +1,12 @@
+{
+  "name": "homebridge-yet6956-rf",
+  "version": "1.0.0",
+  "displayName": "YET6956 RF Converter",
+  "description": "Auto-discovery plugin for Safemate/YET6956 RF Converters",
+  "engines": {
+    "homebridge": "^1.6.0",
+    "node": "^16.16.0"
+  },
+  "keywords": ["homebridge-plugin", "rf-converter", "safemate", "yet6956"],
+  "main": "index.js"
+}
